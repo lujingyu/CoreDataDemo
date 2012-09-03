@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InsertObjectViewController : UIViewController {
+@interface InsertObjectViewController : UIViewController <UIActionSheetDelegate> {
 	
 	IBOutlet UITextField *_tfMemberId;
 	IBOutlet UITextField *_tfMemberName;
