@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F41536B915F360EC005EE0DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41536B815F360EC005EE0DF /* UIKit.framework */; };
+		F41536BB15F360EC005EE0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41536BA15F360EC005EE0DF /* Foundation.framework */; };
+		F41536BD15F360EC005EE0DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41536BC15F360EC005EE0DF /* CoreGraphics.framework */; };
+		F41536BF15F360EC005EE0DF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41536BE15F360EC005EE0DF /* CoreData.framework */; };
+		F41536C515F360EC005EE0DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F41536C315F360EC005EE0DF /* InfoPlist.strings */; };
+		F41536C715F360EC005EE0DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536C615F360EC005EE0DF /* main.m */; };
+		F41536CB15F360EC005EE0DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536CA15F360EC005EE0DF /* AppDelegate.m */; };
+		F41536CE15F360EC005EE0DF /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F41536CC15F360EC005EE0DF /* CoreDataDemo.xcdatamodeld */; };
+		F41536D715F37356005EE0DF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536D515F37356005EE0DF /* RootViewController.m */; };
+		F41536D815F37356005EE0DF /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41536D615F37356005EE0DF /* RootViewController.xib */; };
+		F41536DC15F38260005EE0DF /* TestFetchedResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536DA15F38260005EE0DF /* TestFetchedResultsViewController.m */; };
+		F41536DD15F38260005EE0DF /* TestFetchedResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41536DB15F38260005EE0DF /* TestFetchedResultsViewController.xib */; };
+		F41536E115F38273005EE0DF /* TestFetchRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536DF15F38272005EE0DF /* TestFetchRequestViewController.m */; };
+		F41536E215F38273005EE0DF /* TestFetchRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41536E015F38273005EE0DF /* TestFetchRequestViewController.xib */; };
+		F41536E615F38651005EE0DF /* InsertObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41536E415F38651005EE0DF /* InsertObjectViewController.m */; };
+		F41536E715F38651005EE0DF /* InsertObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41536E515F38651005EE0DF /* InsertObjectViewController.xib */; };
+		F457D02115F44A3A00C88321 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = F457D02015F44A3A00C88321 /* Group.m */; };
+		F457D02515F44A4800C88321 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = F457D02415F44A4800C88321 /* Member.m */; };
+		F4C28BAD15F4477100EF88F7 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C28BAC15F4477100EF88F7 /* CoreDataManager.m */; };
+		F4D50EBB15F45CD500BAF79A /* EditObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D50EB915F45CD500BAF79A /* EditObjectViewController.m */; };
+		F4D50EBC15F45CD500BAF79A /* EditObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D50EBA15F45CD500BAF79A /* EditObjectViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F41536B415F360EC005EE0DF /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41536B815F360EC005EE0DF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F41536BA15F360EC005EE0DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F41536BC15F360EC005EE0DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F41536BE15F360EC005EE0DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F41536C215F360EC005EE0DF /* CoreDataDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataDemo-Info.plist"; sourceTree = "<group>"; };
+		F41536C415F360EC005EE0DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F41536C615F360EC005EE0DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F41536C815F360EC005EE0DF /* CoreDataDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F41536C915F360EC005EE0DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F41536CA15F360EC005EE0DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F41536CD15F360EC005EE0DF /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		F41536D415F37356005EE0DF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F41536D515F37356005EE0DF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F41536D615F37356005EE0DF /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F41536D915F38260005EE0DF /* TestFetchedResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFetchedResultsViewController.h; sourceTree = "<group>"; };
+		F41536DA15F38260005EE0DF /* TestFetchedResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFetchedResultsViewController.m; sourceTree = "<group>"; };
+		F41536DB15F38260005EE0DF /* TestFetchedResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestFetchedResultsViewController.xib; sourceTree = "<group>"; };
+		F41536DE15F38272005EE0DF /* TestFetchRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFetchRequestViewController.h; sourceTree = "<group>"; };
+		F41536DF15F38272005EE0DF /* TestFetchRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFetchRequestViewController.m; sourceTree = "<group>"; };
+		F41536E015F38273005EE0DF /* TestFetchRequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestFetchRequestViewController.xib; sourceTree = "<group>"; };
+		F41536E315F38651005EE0DF /* InsertObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertObjectViewController.h; sourceTree = "<group>"; };
+		F41536E415F38651005EE0DF /* InsertObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertObjectViewController.m; sourceTree = "<group>"; };
+		F41536E515F38651005EE0DF /* InsertObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InsertObjectViewController.xib; sourceTree = "<group>"; };
+		F457D01F15F44A3A00C88321 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		F457D02015F44A3A00C88321 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		F457D02315F44A4800C88321 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		F457D02415F44A4800C88321 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		F4C28BAB15F4477100EF88F7 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		F4C28BAC15F4477100EF88F7 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		F4D50EB815F45CD500BAF79A /* EditObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditObjectViewController.h; sourceTree = "<group>"; };
+		F4D50EB915F45CD500BAF79A /* EditObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditObjectViewController.m; sourceTree = "<group>"; };
+		F4D50EBA15F45CD500BAF79A /* EditObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditObjectViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F41536B115F360EC005EE0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41536B915F360EC005EE0DF /* UIKit.framework in Frameworks */,
+				F41536BB15F360EC005EE0DF /* Foundation.framework in Frameworks */,
+				F41536BD15F360EC005EE0DF /* CoreGraphics.framework in Frameworks */,
+				F41536BF15F360EC005EE0DF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41536A915F360EC005EE0DF = {
+			isa = PBXGroup;
+			children = (
+				F41536C015F360EC005EE0DF /* CoreDataDemo */,
+				F41536B715F360EC005EE0DF /* Frameworks */,
+				F41536B515F360EC005EE0DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F41536B515F360EC005EE0DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F41536B415F360EC005EE0DF /* CoreDataDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F41536B715F360EC005EE0DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F41536B815F360EC005EE0DF /* UIKit.framework */,
+				F41536BA15F360EC005EE0DF /* Foundation.framework */,
+				F41536BC15F360EC005EE0DF /* CoreGraphics.framework */,
+				F41536BE15F360EC005EE0DF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F41536C015F360EC005EE0DF /* CoreDataDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F457D02615F44A5400C88321 /* CoreData */,
+				F41536C915F360EC005EE0DF /* AppDelegate.h */,
+				F41536CA15F360EC005EE0DF /* AppDelegate.m */,
+				F41536D415F37356005EE0DF /* RootViewController.h */,
+				F41536D515F37356005EE0DF /* RootViewController.m */,
+				F41536D615F37356005EE0DF /* RootViewController.xib */,
+				F41536DE15F38272005EE0DF /* TestFetchRequestViewController.h */,
+				F41536DF15F38272005EE0DF /* TestFetchRequestViewController.m */,
+				F41536E015F38273005EE0DF /* TestFetchRequestViewController.xib */,
+				F41536D915F38260005EE0DF /* TestFetchedResultsViewController.h */,
+				F41536DA15F38260005EE0DF /* TestFetchedResultsViewController.m */,
+				F41536DB15F38260005EE0DF /* TestFetchedResultsViewController.xib */,
+				F41536E315F38651005EE0DF /* InsertObjectViewController.h */,
+				F41536E415F38651005EE0DF /* InsertObjectViewController.m */,
+				F41536E515F38651005EE0DF /* InsertObjectViewController.xib */,
+				F4D50EB815F45CD500BAF79A /* EditObjectViewController.h */,
+				F4D50EB915F45CD500BAF79A /* EditObjectViewController.m */,
+				F4D50EBA15F45CD500BAF79A /* EditObjectViewController.xib */,
+				F41536C115F360EC005EE0DF /* Supporting Files */,
+			);
+			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		F41536C115F360EC005EE0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F41536C215F360EC005EE0DF /* CoreDataDemo-Info.plist */,
+				F41536C315F360EC005EE0DF /* InfoPlist.strings */,
+				F41536C615F360EC005EE0DF /* main.m */,
+				F41536C815F360EC005EE0DF /* CoreDataDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F457D02615F44A5400C88321 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F41536CC15F360EC005EE0DF /* CoreDataDemo.xcdatamodeld */,
+				F4C28BAB15F4477100EF88F7 /* CoreDataManager.h */,
+				F4C28BAC15F4477100EF88F7 /* CoreDataManager.m */,
+				F457D02315F44A4800C88321 /* Member.h */,
+				F457D02415F44A4800C88321 /* Member.m */,
+				F457D01F15F44A3A00C88321 /* Group.h */,
+				F457D02015F44A3A00C88321 /* Group.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F41536B315F360EC005EE0DF /* CoreDataDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41536D115F360EC005EE0DF /* Build configuration list for PBXNativeTarget "CoreDataDemo" */;
+			buildPhases = (
+				F41536B015F360EC005EE0DF /* Sources */,
+				F41536B115F360EC005EE0DF /* Frameworks */,
+				F41536B215F360EC005EE0DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataDemo;
+			productName = CoreDataDemo;
+			productReference = F41536B415F360EC005EE0DF /* CoreDataDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F41536AB15F360EC005EE0DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "jingyu lu";
+			};
+			buildConfigurationList = F41536AE15F360EC005EE0DF /* Build configuration list for PBXProject "CoreDataDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F41536A915F360EC005EE0DF;
+			productRefGroup = F41536B515F360EC005EE0DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F41536B315F360EC005EE0DF /* CoreDataDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F41536B215F360EC005EE0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41536C515F360EC005EE0DF /* InfoPlist.strings in Resources */,
+				F41536D815F37356005EE0DF /* RootViewController.xib in Resources */,
+				F41536DD15F38260005EE0DF /* TestFetchedResultsViewController.xib in Resources */,
+				F41536E215F38273005EE0DF /* TestFetchRequestViewController.xib in Resources */,
+				F41536E715F38651005EE0DF /* InsertObjectViewController.xib in Resources */,
+				F4D50EBC15F45CD500BAF79A /* EditObjectViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F41536B015F360EC005EE0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41536C715F360EC005EE0DF /* main.m in Sources */,
+				F41536CB15F360EC005EE0DF /* AppDelegate.m in Sources */,
+				F41536CE15F360EC005EE0DF /* CoreDataDemo.xcdatamodeld in Sources */,
+				F41536D715F37356005EE0DF /* RootViewController.m in Sources */,
+				F41536DC15F38260005EE0DF /* TestFetchedResultsViewController.m in Sources */,
+				F41536E115F38273005EE0DF /* TestFetchRequestViewController.m in Sources */,
+				F41536E615F38651005EE0DF /* InsertObjectViewController.m in Sources */,
+				F4C28BAD15F4477100EF88F7 /* CoreDataManager.m in Sources */,
+				F457D02115F44A3A00C88321 /* Group.m in Sources */,
+				F457D02515F44A4800C88321 /* Member.m in Sources */,
+				F4D50EBB15F45CD500BAF79A /* EditObjectViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F41536C315F360EC005EE0DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F41536C415F360EC005EE0DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F41536CF15F360EC005EE0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F41536D015F360EC005EE0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F41536D215F360EC005EE0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataDemo/CoreDataDemo-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataDemo/CoreDataDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F41536D315F360EC005EE0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreDataDemo/CoreDataDemo-Prefix.pch";
+				INFOPLIST_FILE = "CoreDataDemo/CoreDataDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41536AE15F360EC005EE0DF /* Build configuration list for PBXProject "CoreDataDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41536CF15F360EC005EE0DF /* Debug */,
+				F41536D015F360EC005EE0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F41536D115F360EC005EE0DF /* Build configuration list for PBXNativeTarget "CoreDataDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41536D215F360EC005EE0DF /* Debug */,
+				F41536D315F360EC005EE0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F41536CC15F360EC005EE0DF /* CoreDataDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F41536CD15F360EC005EE0DF /* CoreDataDemo.xcdatamodel */,
+			);
+			currentVersion = F41536CD15F360EC005EE0DF /* CoreDataDemo.xcdatamodel */;
+			path = CoreDataDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F41536AB15F360EC005EE0DF /* Project object */;
+}
