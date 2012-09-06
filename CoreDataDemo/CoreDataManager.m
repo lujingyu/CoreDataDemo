@@ -90,16 +90,22 @@ static CoreDataManager *instance = nil;
     // 设置预置数据库(如果需要的话)
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *storePath = [storeURL path];
-    if ([fileManager fileExistsAtPath:storePath]) {
+    if ([fileManager fileExistsAtPath:storePath] == NO) {
         NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"CoreData" ofType:@"sqlite"];
         if (defaultStorePath) {
             [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
         }
     }
     
+	// 当更新App，新旧表结构发生变化时，通过添加以下设置，可避免App发生crash
+	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                             nil];
+
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

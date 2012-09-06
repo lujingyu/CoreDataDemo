@@ -75,7 +75,7 @@
                                                  name:NSManagedObjectContextDidSaveNotification
                                                object:nil];
 
-	self.navigationItem.title = @"FetchedResults";
+	self.navigationItem.title = @"NSFetchedResultsController";
 	    
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 372) style:UITableViewStylePlain];
     _tableView.dataSource = self;

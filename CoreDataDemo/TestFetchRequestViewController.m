@@ -57,7 +57,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 	
-	self.navigationItem.title = @"FetchRequest";
+	self.navigationItem.title = @"NSFetchRequest";
     
     _dataSource = [[NSMutableArray alloc] initWithCapacity:0];
     [_dataSource addObjectsFromArray:[self fetchObjects]];
